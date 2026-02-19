@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        
+        /* Gradient Background */
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        text-align: center;
+        width: 300px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #764ba2;
+        box-shadow: 0 0 5px #764ba2;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    /* Hover Effect */
+    button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(45deg, #764ba2, #667eea);
+    }
+
+    #result {
+        margin-top: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <form id="form">
+        <input type="number" id="Salary" placeholder="Enter  Baic Salary" required><br><br>
+        <input type="number" id="hra" placeholder="Enter  HRA %" required><br><br>
+        <input type="number" id="da" placeholder="Enter  DA %" required><br><br>
+        <input type="number" id="ta" placeholder="Enter  TA %" required><br><br>
+
+        <button type="submit" id="submit">Check</button>
+
+        <p id="result">TotalSalary =</p>
+    </form>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
